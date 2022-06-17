@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body{
+        background-color: rgb(12, 9, 9);
+        display: flex;
+        min-height: 100vh;
+    }
+
+    main{
+        display: grid;
+        grid-template-areas:
+        'a a a b b'
+        'c c d d d'
+        'c c e e e'
+        ;
+        gap: 8px;
+        width: 50%;  
+        margin: 10px; 
+        padding: 100px;
+    }
+
+    main div{
+        padding: 20px ;
+        
+    }
+
+    .grid1{
+        background-color: orangered;
+        grid-area: a;
+        padding: 80px 2px 80px 80px;
+        width: 80%;
+
+        
+    }
+
+    .grid2{
+        background-color: #edbb04;
+        grid-area: b;
+       
+       
+    }
+
+    .grid3{
+        background-color: green;
+        grid-area: c;
+        padding-left: 50px;
+        width: 90%;
+      
+        
+    }
+
+    .grid4{
+        background-color: rgb(20, 117, 244);
+        grid-area: d;
+        padding: 25px;
+        margin-left: 45px;
+
+
+    
+    }
+
+    .grid5{
+        background-color: rgb(20, 117, 244);
+        grid-area: e;
+        padding: 35px;
+        margin-left: 45px;
+    
+    }
+
+    .flex{
+    border-radius: 10px;
+        padding: 15px;
+        background-color: white;
+        font-size: 15px;
+        color: blueviolet;
+    }
+
+    .flex a{
+        text-decoration: none;
+    }
+
+
+</style>
+<body>
+    
+    <header>
+        <div>
+            <button class="flex"><a href="index.html">Click here to go to Flex</a></button>
+    </header>
+
+    <main>
+            <div class ="grid1"></div>
+            <div class="grid2"></div>
+            <div class="grid3"></div>
+            <div class="grid4"></div>
+            <div class="grid5"></div>
+    </main>
+   
+</body>
+</html>
